@@ -17,7 +17,7 @@ html,body{
 }
 
 .nav h4 {
-    display: inline-block;  /* makes them sit side by side 
+    display: inline-block;  /* makes them sit side by side  
     margin: 0 15px;         /* spacing 
     color: red;             /* text color 
     padding:30px 20px 10px 50px;
@@ -44,4 +44,38 @@ html,body{
     font-size: 20px;
 
 
+}
+.search{
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+
+    
+    
+}
+.search input{
+    width: 300px;
+    font-size: 20px;
+    padding: 10px 20px ;
+    border-radius: 30px;
+    border: none;
+    /* Big, soft shadow */
+    box-shadow: 0 0 40px 10px rgba(255, 218, 185, 0.6);
+    transition: all 0.3s ease; /* smooth resize on focus */
+
+}
+.search input:hover,
+.search input:focus{
+    width: 450px;
+}
+.search i{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+}   
+.search-box{
+    display: inline-block;
+    position: relative;
 }
