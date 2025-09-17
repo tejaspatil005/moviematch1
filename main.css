@@ -79,3 +79,29 @@ html,body{
     display: inline-block;
     position: relative;
 }
+.movies{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    justify-content: flex-start;
+    margin-top: 120px;
+
+}
+.movie-card{
+    min-width: 200px;
+    text-align: center;
+    background:peachpuff;
+    border-radius: 10px;
+    overflow: hidden;
+     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    
+
+}
+.movie-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: inline-block;
+
+}
