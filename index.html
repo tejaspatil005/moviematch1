@@ -32,5 +32,34 @@
         <i class="fa fa-search"></i>
         
     </div>
+
+    <div id="movies" class="movies"></div>
+    <script>
+        const movies=[
+            {title:"Uncharted", gener:"Adventure", Img:"images/ad1.jpg"},
+            {title:"Jungle cruise", gener:"Adventure", Img:"images/ad2.jpg"},
+            {title:"Fall", gener:"Adventure", Img:"images/ad3.jpg"},
+            {title:"Prince of Persia", gener:"Adventure", Img:"images/ad4.jpg"},
+            {title:"Mummy", gener:"Adventure", Img:"images/ad5.jpg"},
+        ];
+
+        const container = document.getElementById("movies");
+
+        movies.forEach(movie =>{
+            container.innerHTML +=`
+            <div class="movie-card">
+                <img src="${movie.Img}" alt="${movie.title}">
+                <h3>${movie.title}</h3>
+                <p>${movie.gener}</p>
+                </div>
+                `
+        })
+    </script>
+
+
 </body>
 </html>
+
+ 
+
+
