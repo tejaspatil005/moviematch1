@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+ {% load static %}
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieMatch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="main.css">
+   
+    <link rel="stylesheet" href="{% static 'movies/main.css' %}">
+
 </head>
 <body>
     <!--<div class="cont">
@@ -36,26 +39,26 @@
     <div id="movies" class="movies"></div>
     <script>
         const movies=[
-            {title:"Uncharted", gener:"Adventure", Img:"images/ad1.jpg"},
-            {title:"Jungle cruise", gener:"Adventure", Img:"images/ad2.jpg"},
-            {title:"Fall", gener:"Adventure", Img:"images/ad3.jpg"},
-            {title:"Prince of Persia", gener:"Adventure", Img:"images/ad4.jpg"},
-            {title:"MUMMY", gener:"Adventure", Img:"images/ad5.jpg"},
-            {title:"FALLOUT", gener:"Action", Img:"images/action1.jpg"},
-            {title:"BATMAN", gener:"Action", Img:"images/action2.jpg"},
-            {title:"BLACK HAWK DOWN", gener:"Action", Img:"images/action3.jpg"},
-            {title:"JOHN WICK", gener:"Action", Img:"images/action4.jpg"},
-            {title:"ONK BAK 3", gener:"Action", Img:"images/action5.jpg"},
-            {title:"BRUCE ALMIGHTY", gener:"COMEDYY", Img:"images/bruce almighty.jpg"},
-            {title:"DR.DOLITTLE", gener:"COMEDY", Img:"images/comedy5.jpg"},
-            {title:"DICTATOR", gener:"COMEDY", Img:"images/dictator.jpg"},
-            {title:"FALL GUYS", gener:"COMEDY", Img:"images/fall guy.jpg"},
-            {title:"HANGOVER", gener:"COMEDY", Img:"images/hangover.jpg"},
-            {title:"CONJURING 2", gener:"HORROR", Img:"images/conjuring2.jpg"},
-            {title:"HORROR FOREST", gener:"HORROR", Img:"images/horror forest.jpg"},
-            {title:"HORROR STORY", gener:"HORROR", Img:"images/horror story.jpg"},
-            {title:"LUPT", gener:"HORROR", Img:"images/lupt.jpg"},
-            {title:"RINGS", gener:"HORROR", Img:"images/rings.jpg"},
+        {title:"Uncharted", gener:"Adventure", Img:"{% static 'movies/images/test.jpg' %}"},
+        {title:"Jungle cruise", gener:"Adventure", Img:"{% static 'movies/images/ad2.jpg' %}"},
+        {title:"Fall", gener:"Adventure", Img:"{% static 'movies/images/ad3.jpg' %}"},
+        {title:"Prince of Persia", gener:"Adventure", Img:"{% static 'movies/images/ad4.jpg' %}"},
+        {title:"MUMMY", gener:"Adventure", Img:"{% static 'movies/images/ad5.jpg' %}"},
+        {title:"FALLOUT", gener:"Action", Img:"{% static 'movies/images/action1.jpg' %}"},
+        {title:"BATMAN", gener:"Action", Img:"{% static 'movies/images/action2.jpg' %}"},
+        {title:"BLACK HAWK DOWN", gener:"Action", Img:"{% static 'movies/images/action3.jpg' %}"},
+        {title:"JOHN WICK", gener:"Action", Img:"{% static 'movies/images/action4.jpg' %}"},
+        {title:"ONK BAK 3", gener:"Action", Img:"{% static 'movies/images/action5.jpg' %}"},
+        {title:"BRUCE ALMIGHTY", gener:"COMEDY", Img:"{% static 'movies/images/bruce almighty.jpg' %}"},
+        {title:"DR.DOLITTLE", gener:"COMEDY", Img:"{% static 'movies/images/comedy5.jpg' %}"},
+        {title:"DICTATOR", gener:"COMEDY", Img:"{% static 'movies/images/dictator.jpg' %}"},
+        {title:"FALL GUYS", gener:"COMEDY", Img:"{% static 'movies/images/fall guy.jpg' %}"},
+        {title:"HANGOVER", gener:"COMEDY", Img:"{% static 'movies/images/hangover.jpg' %}"},
+        {title:"CONJURING 2", gener:"HORROR", Img:"{% static 'movies/images/conjuring2.jpg' %}"},
+        {title:"HORROR FOREST", gener:"HORROR", Img:"{% static 'movies/images/horror forest.jpg' %}"},
+        {title:"HORROR STORY", gener:"HORROR", Img:"{% static 'movies/images/horror story.jpg' %}"},
+        {title:"LUPT", gener:"HORROR", Img:"{% static 'movies/images/lupt.jpg' %}"},
+        {title:"RINGS", gener:"HORROR", Img:"{% static 'movies/images/rings.jpg' %}"},
 
         ];
 
@@ -77,5 +80,3 @@
 </html>
 
  
-
-
